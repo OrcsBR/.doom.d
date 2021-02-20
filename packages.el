@@ -56,6 +56,7 @@
 (package! markdown-mode)
 (package! real-auto-save)
 (package! key-chord)
+(package! transpose-frame)
 (package! org-pandoc-import
   :recipe (:host github
            :repo "tecosaur/org-pandoc-import"

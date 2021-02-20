@@ -63,6 +63,7 @@
 (require 'org-id)
 (require 'real-auto-save)
 (require 'key-chord)
+(require 'transpose-frame)
 
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-copy-env "PYTHONPATH")
@@ -130,6 +131,9 @@
 (global-set-key (kbd "H-<right>") 'windmove-right)
 (global-set-key (kbd "H-<up>")    'windmove-up)
 (global-set-key (kbd "H-<down>")  'windmove-down)
+(global-set-key (kbd "H-.") 'transpose-frame)
+(global-set-key (kbd "H-,") 'rotate-frame-clockwise)
+(global-set-key (kbd "H-!") 'tear-off-window)
 (global-set-key (kbd "C-x C-z")  'ivy-switch-buffer)
 
 (define-key minibuffer-local-map (kbd "M-p") 'previous-complete-history-element)
